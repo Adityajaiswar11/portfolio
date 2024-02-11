@@ -1,37 +1,67 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [nav, setNav] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
+
   const links = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Projects", path: "/project" },
-    { title: "Contact", path: "/contact" },
+    { title: "Home", path: "home" },
+    { title: "About", path: "about" },
+    { title: "Skills", path: "skills" },
+    { title: "Projects", path: "project" },
+    { title: "Contact", path: "contact" },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("div[id]");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (
+          window.scrollY >= sectionTop - sectionHeight * 0.5 &&
+          window.scrollY < sectionTop + sectionHeight - sectionHeight * 0.5
+        ) {
+          setActiveLink(section.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // bg-gradient-to-r from-[#DE5B6D] to-[#1F2235]
+
   return (
-    <div className="md:px-[70px]">
-      <div className="flex justify-between h-16 items-center text-white">
-        <h1 className="text-2xl md:pl-6  pl-4 font-bold">
-          <span className="text-[#E63946]">A</span>bhilash.
-        </h1>
+    <div className="md:px-[70px] w-full fixed  top-0 left-0 z-50  bg-gradient-to-r from-[#00FFFF] to-[#000000]   ">
+      <div className="flex justify-between h-16 items-center text-white ">
+        <h1 className="text-2xl md:pl-6  pl-4 font-bold">Abhilash.</h1>
         <div className="hidden text-white font-bold md:flex text-lg">
           {links.map((data) => (
-            <NavLink
+            <Link
+              key={Math.random()}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
               to={data.path}
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? "#E63946" : "white",
-                };
-              }}
             >
               <ul className="md:flex hidden md:pr-8 pr-6 hover:cursor-pointer">
-                <li className="nav" key={Math.random()}>
+                <li
+                  key={Math.random()}
+                  className={`relative tracking-[1px]  cursor-pointer ${
+                    activeLink === data.path ? "text-[#00FFFF]" : "text-white"
+                  }`}
+                >
                   {data.title}
                 </li>
               </ul>
-            </NavLink>
+            </Link>
           ))}
         </div>
         <div
@@ -44,20 +74,26 @@ function Header() {
         {nav && (
           <div className="  flex flex-col justify-center items-center absolute top-0 left-0 h-screen w-full text-2xl font-bold bg-zinc-950">
             {links.map((data) => (
-              <NavLink
+              <Link
+                key={Math.random()}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
                 to={data.path}
-                style={({ isActive }) => {
-                  return {
-                    color: isActive ? "#E63946" : "white",
-                  };
-                }}
               >
                 <ul>
-                  <li key={Math.random()} className="my-5 ">
+                  <li
+                    key={Math.random()}
+                    onClick={() => setNav(!nav)}
+                    className={`relative tracking-[1px] my-5  cursor-pointer ${
+                      activeLink === data.path ? "text-[#00FFFF]" : "text-white"
+                    }`}
+                  >
                     {data.title}
                   </li>
                 </ul>
-              </NavLink>
+              </Link>
             ))}
           </div>
         )}
