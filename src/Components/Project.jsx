@@ -34,8 +34,8 @@ function Project() {
         " See my portfolio! Dive into a showcase of my diverse projects, From innovative solutions to impactful results, each project reflects my dedication to excellence in Web Development",
       Technology:
         "React JS , Vite Server, Tailwind css , Node JS,Express JS,MongoDB",
-      Github: "https://vahan-client.vercel.app/",
-      live: "",
+      Github: "https://github.com/Abhilashpal128/Portfolio-client",
+      live: "https://portfolio-client-rose.vercel.app/",
     },
     {
       image: TiicTacToe,

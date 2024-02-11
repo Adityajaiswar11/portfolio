@@ -3,6 +3,7 @@ import {
   TiSocialFacebookCircular,
   TiSocialTwitterCircular,
   TiSocialLinkedinCircular,
+  TiSocialGithubCircular,
 } from "react-icons/ti";
 import { TypeAnimation } from "react-type-animation";
 function Home() {
@@ -61,13 +62,30 @@ function Home() {
         <div className=" text-[#00FFFF] md:px-24  grid  place-items-center ">
           <div className="flex md:pt-7  pt-8">
             <h1>
-              <TiSocialFacebookCircular className="text-5xl" />
+              <a
+                href="https://www.linkedin.com/in/abhilashpal8928/"
+                target="_blank"
+              >
+                <TiSocialLinkedinCircular className="text-5xl" />
+              </a>
             </h1>
             <h1>
-              <TiSocialTwitterCircular className="text-5xl" />
+              <a href="https://github.com/Abhilashpal128" target="_blank">
+                <TiSocialGithubCircular className="text-5xl" />
+              </a>
             </h1>
             <h1>
-              <TiSocialLinkedinCircular className="text-5xl" />
+              <a href="https://twitter.com/?lang=en" target="_blank">
+                <TiSocialTwitterCircular className="text-5xl" />
+              </a>
+            </h1>
+            <h1>
+              <a
+                href="https://www.facebook.com/abhilash.pal.9638"
+                target="_blank"
+              >
+                <TiSocialFacebookCircular className="text-5xl" />
+              </a>
             </h1>
           </div>
           <div className="my-1 w-36 bg-slate-400 h-0.5"></div>
