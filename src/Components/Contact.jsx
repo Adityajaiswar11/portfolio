@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaFacebook,
   FaGithub,
@@ -7,12 +7,21 @@ import {
   FaPhoneAlt,
   FaTelegramPlane,
 } from "react-icons/fa";
+import { PropagateLoader } from "react-spinners";
+
 import { SaveEmail, SendEmail } from "../Apis/ContactApi";
 import { toast } from "react-toastify";
+import Loader from "./Loader";
+
+const color = "#00FFFF";
+const loading = true;
 
 function Contact() {
+  const [isActiveLoader, setIsActiveLoader] = useState(false);
+
   const handleContactSubmit = async (e) => {
     e.preventDefault();
+    setIsActiveLoader(true);
     try {
       const Data = {
         name: e.target.Name.value,
@@ -22,6 +31,7 @@ function Contact() {
       };
       if (!Data.name || !Data.email || !Data.message || !Data.message) {
         toast.error("All fields are required");
+        setIsActiveLoader(false);
       } else {
         const Saveresponse = await SaveEmail(Data);
         if (Saveresponse.success === true) {
@@ -29,18 +39,22 @@ function Contact() {
         } else {
           console.log(Saveresponse);
           toast.error("Enter Valid Email");
+          setIsActiveLoader(false);
         }
 
         const Sendresponse = await SendEmail(Data);
         if (Sendresponse.success === true) {
           toast.success("Email Sent Successfully");
+          setIsActiveLoader(false);
         } else {
           console.log(Sendresponse);
           toast.error("Enter Valid Email");
+          setIsActiveLoader(false);
         }
       }
     } catch (error) {
       toast.error("something went wrong");
+      setIsActiveLoader(false);
     }
   };
   const handleEmailClick = (event) => {
@@ -67,6 +81,21 @@ function Contact() {
         </div>
 
         <form onSubmit={handleContactSubmit} className="md:flex">
+          {isActiveLoader && (
+            <div className=" absolute flex backdrop-blur-sm md:w-[65%] w-[100%]  flex-col md:h-[65%] h-[67%] justify-center items-center gap-3 ">
+              <div>
+                <label className="text-white text-3xl">Sending Mail....</label>
+              </div>
+              <div className="">
+                <PropagateLoader
+                  color={color}
+                  size={25}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
+              </div>
+            </div>
+          )}
           <div className="md:w-[70%] pt-4">
             <div className="flex flex-col  items-center md:flex-row justify-center gap-8 ">
               <input
