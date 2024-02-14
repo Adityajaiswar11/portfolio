@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+/* eslint-disable react/jsx-no-target-blank */
+import { useState } from "react";
 import {
-  FaFacebook,
   FaGithub,
   FaInstagramSquare,
   FaLinkedin,
@@ -8,13 +8,11 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { PropagateLoader } from "react-spinners";
-
-import { SaveEmail, SendEmail } from "../Apis/ContactApi";
 import { toast } from "react-toastify";
-import Loader from "./Loader";
+
 
 const color = "#00FFFF";
-const loading = true;
+
 
 function Contact() {
   const [isActiveLoader, setIsActiveLoader] = useState(false);
@@ -73,12 +71,12 @@ function Contact() {
 
   return (
     <div className="py-16" id="contact">
-      <div className="md:h-screen">
-        <div className="flex flex-col">
-          <h1 className="text-5xl font-bold text-white text-center py-8">
-            Contact Me !
+      <div className="">
+       
+          <h1 className="text-5xl font-bold text-white text-center mb-10">
+            GET IN TOUCH 
           </h1>
-        </div>
+
 
         <form onSubmit={handleContactSubmit} className="md:flex">
           {isActiveLoader && (
@@ -102,13 +100,13 @@ function Contact() {
                 type="text"
                 id="Name"
                 placeholder="Your Name"
-                className="bg-[#262626] text-white pl-8 border-2 border-[#06BF96] shadow-md shadow-[#06BF96]  h-[50px] w-[80%] md:w-[38%] rounded-lg"
+                className="bg-[#262626] text-white pl-8   h-[50px] w-[80%] md:w-[38%] rounded-lg"
               />
               <input
                 type="text"
                 id="Email"
                 placeholder="Your Email"
-                className="bg-[#262626] text-white pl-8 border-2 border-[#06BF96] shadow-md shadow-[#06BF96]  h-[50px] w-[80%] md:w-[38%] rounded-lg"
+                className="bg-[#262626] text-white pl-8   h-[50px] w-[80%] md:w-[38%] rounded-lg"
               />
             </div>
             <div className="flex justify-center  py-7">
@@ -116,7 +114,7 @@ function Contact() {
                 type="text"
                 id="Subject"
                 placeholder="Enter Subject"
-                className="bg-[#262626] text-white pl-8  h-[50px] w-[80%] rounded-lg border-2 border-[#06BF96] shadow-md shadow-[#06BF96] "
+                className="bg-[#262626] text-white pl-8  h-[50px] w-[80%] rounded-lg  "
               />
             </div>
             <div className="flex justify-center ">
@@ -124,12 +122,12 @@ function Contact() {
                 type="text"
                 id="Message"
                 placeholder="Your Message"
-                className="bg-[#262626] text-white pl-8 h-[200px]   w-[80%] rounded-lg border-2 border-[#00FFFF] shadow-md shadow-[#00FFFF] "
+                className="bg-[#262626] text-white pl-8 h-[200px]   w-[80%] rounded-lg "
               />
             </div>
             <div className="flex justify-center py-6">
               <div className="w-[80%] flex md:justify-start justify-center">
-                <button className="h-[40px] w-[150px] rounded-lg bg-slate-900 text-white shadow-md borger-2 border-black shadow-[#00FFFF] ">
+                <button className="py-2 px-4 rounded-lg bg-slate-900 text-white shadow-md">
                   Submit
                 </button>
               </div>
@@ -140,10 +138,10 @@ function Contact() {
               <a
                 href="#"
                 onClick={handleEmailClick}
-                className="flex items-center gap-4 "
+                className="flex items-center gap-4 underline "
               >
-                <FaTelegramPlane className="text-4xl text-[#06BF96]" />
-                abhilashpal128@gmail.com
+                <FaTelegramPlane className="text-2xl text-[#06BF96]" />
+                adityajaiswar11@gmail.com
               </a>
             </div>
             <div>
@@ -152,8 +150,8 @@ function Contact() {
                 onClick={handlePhoneClick}
                 className="flex items-center gap-4 "
               >
-                <FaPhoneAlt className="text-4xl text-[#06BF96]" />
-                <h1>+91 8928996887</h1>
+                <FaPhoneAlt className="text-2xl text-[#06BF96]" />
+                <span>+91 9152187470</span>
               </a>
             </div>
             <div className="flex gap-4 text-3xl text-[#ababab]  ">
@@ -167,12 +165,6 @@ function Contact() {
                 <FaGithub className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
               </a>
               <a
-                href="https://www.facebook.com/abhilash.pal.9638"
-                target="_blank"
-              >
-                <FaFacebook className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
-              </a>
-              <a
                 href="https://www.instagram.com/abhilash.pal.9638/"
                 target="_blabk"
               >
@@ -180,8 +172,8 @@ function Contact() {
               </a>
             </div>
             <div className="py-3">
-              <button className="h-[40px] bg-slate-900 text-white shadow-md shadow-[#06BF96]   rounded-md w-[150px]">
-                Download CV
+              <button className=" bg-slate-900 text-white py-2 px-5 opacity-90  rounded-md font-semibold hover:border duration-300 delay-300">
+                Download Resume
               </button>
             </div>
           </div>

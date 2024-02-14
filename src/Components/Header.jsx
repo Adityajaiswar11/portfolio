@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -35,12 +35,10 @@ function Header() {
     };
   }, []);
 
-  // bg-gradient-to-r from-[#DE5B6D] to-[#1F2235]
-
   return (
-    <div className="md:px-[70px] w-full fixed  top-0 left-0 z-50  bg-gradient-to-r from-[#00FFFF] to-[#000000]   ">
+    <div className="md:px-[70px] w-full fixed  top-0 left-0 z-50  bg-gradient-to-r from-[#071b2e] to-[#000000]   ">
       <div className="flex justify-between h-16 items-center text-white ">
-        <h1 className="text-2xl md:pl-6  pl-4 font-bold">Abhilash.</h1>
+        <h1 className="text-2xl md:pl-6  pl-4 font-bold">Aditya.</h1>
         <div className="hidden text-white font-bold md:flex text-lg">
           {links.map((data) => (
             <Link
@@ -104,4 +102,4 @@ function Header() {
 
 export default Header;
 
-//
+

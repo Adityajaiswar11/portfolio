@@ -11,3 +11,7 @@
 .nav:hover::after {
   @apply w-[100%];
 }
+
+body,html{
+  line-height: 1.6;
+}

@@ -1,22 +1,21 @@
-import React from "react";
-import CabImage from "/Images/cabProjectImage.avif";
-import TiicTacToe from "/Images/TicTacToe.png";
-import PizzaPool from "/Images/PizzaPool.png";
+/* eslint-disable react/jsx-no-target-blank */
+
+import img from "/Images/e-commerce.webp";
+import todo from "/Images/todo.webp";
 import WeatherApp from "/Images/WeatherApp.jpg";
 import PortFolioImage from "/Images/Portfolio.avif";
-import Todo from "/Images/TodoApp.avif";
 
 function Project() {
   const Projects = [
     {
-      image: CabImage,
-      name: "VAHAN",
+      image:img,
+      name: "E-commerce",
       description:
-        "A WebApp Where Customer Can know the Accurate Cab Rent Based On the Cabs Varients",
+        "The e-commerce website delivers a comprehensive shopping experience by combining intuitive user interfaces with robust authentication and data storage functionalities powered by Mongoose and MongoDB.",
       Technology:
-        "React Js (Frontend) , NodeJs (Backend) , MongoDB (DataBase).",
-      Github: "https://github.com/Abhilashpal128/VAHAN-client",
-      live: "https://vahan-client.vercel.app/",
+        "React.js, NodeJs.js, Express, MongoDB",
+      Github: "https://github.com/Adityajaiswar11/E-commerce-frontend",
+      live: "",
     },
     {
       image: WeatherApp,
@@ -24,8 +23,8 @@ function Project() {
       description:
         "Live Weather Forecaste : Realtime Updates on Current weather conditions",
       Technology: "Next Js , External API",
-      Github: "https://github.com/Abhilashpal128/Weather-App",
-      live: "https://weather-app-sigma-eight-19.vercel.app/",
+      Github: "",
+      live: "",
     },
     {
       image: PortFolioImage,
@@ -33,23 +32,23 @@ function Project() {
       description:
         " See my portfolio! Dive into a showcase of my diverse projects, From innovative solutions to impactful results, each project reflects my dedication to excellence in Web Development",
       Technology:
-        "React JS , Vite Server, Tailwind css , Node JS,Express JS,MongoDB",
-      Github: "https://github.com/Abhilashpal128/Portfolio-client",
-      live: "https://portfolio-client-rose.vercel.app/",
+        "React JS, Tailwind CSS",
+      Github: "",
+      live: "",
     },
     {
-      image: TiicTacToe,
-      name: "Tic Tac Toe",
+      image: todo,
+      name: "Todo task-management",
       description:
         " I developed a Tic-Tac-Toe game using React to enhance my logic-building skills and learn the fundamentals of React development. This project demonstrates my ability to implement game mechanics and utilize React's component-based architecture effectively. ",
-      Technology: "React Js",
-      Github: "https://github.com/Abhilashpal128/TicTacToe",
-      live: "https://tic-tac-toe-alpha-mocha.vercel.app/",
+      Technology: "React.Js",
+      Github: "https://github.com/Adityajaiswar11/CRUD-OPERATION-in-React",
+      live: "https://crud-operation-in-react-three.vercel.app/",
     },
   ];
 
   return (
-    <div className="py-16" id="project">
+    <div className="py-16 bg-slate-950 border-b" id="project">
       <h1 className="text-4xl md:py-2 font-bold text-white text-center">
         Projects
       </h1>

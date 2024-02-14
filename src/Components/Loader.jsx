@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+
 import { PropagateLoader } from "react-spinners";
 
 function Loader() {
