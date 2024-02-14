@@ -156,19 +156,13 @@ function Contact() {
             </div>
             <div className="flex gap-4 text-3xl text-[#ababab]  ">
               <a
-                href="https://www.linkedin.com/in/abhilashpal8928/"
+                href=""
                 target="_blank"
               >
                 <FaLinkedin className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
               </a>
-              <a href="https://github.com/Abhilashpal128" target="_blank">
+              <a href="" target="_blank">
                 <FaGithub className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
-              </a>
-              <a
-                href="https://www.instagram.com/abhilash.pal.9638/"
-                target="_blabk"
-              >
-                <FaInstagramSquare className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
               </a>
             </div>
             <div className="py-3">
