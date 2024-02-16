@@ -12,6 +12,7 @@ import { DiNodejs, DiReact } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
 
+
 function Skills() {
   const skills = [
     { icon: <SiHtml5 />, name: "HTML5", textColor: "red-500" },
@@ -65,18 +66,18 @@ function Skills() {
         <h1 className="text-4xl font-bold">Skills</h1>
       </div>
       <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-9 gap-8">
-        {skills.map((skill, index) =>{
-           return(
+        {skills.map((skill, index) => {
+          return (
             <>
-            <div
-              className={` flex justify-center items-center flex-col bg-transparent rounded-full hover:scale-125 duration-500 py-[2rem]`}
-              key={index}
-            >
-              <h1 className={`text-${skill.textColor} text-5xl`}> {skill.icon}</h1>
-              <h3 className={`text-${skill.textColor}`}>{skill.name}</h3>
-            </div>
-          </>
-           )
+              <div className={`text-${skill.textColor} flex justify-center items-center flex-col bg-transparent rounded-full hover:scale-125 duration-500 py-[2rem]`} key={index}>
+                <h1 className={` text-5xl`}>
+                  {" "}
+                  {skill.icon}
+                </h1>
+                <h3 className="">{skill.name}</h3>
+              </div>
+            </>
+          );
         })}
       </div>
     </div>

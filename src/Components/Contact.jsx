@@ -1,73 +1,15 @@
-/* eslint-disable react/jsx-no-target-blank */
-import { useState } from "react";
+
 import {
   FaGithub,
-  FaInstagramSquare,
   FaLinkedin,
   FaPhoneAlt,
   FaTelegramPlane,
 } from "react-icons/fa";
-import { PropagateLoader } from "react-spinners";
-import { toast } from "react-toastify";
 
 
-const color = "#00FFFF";
 
 
 function Contact() {
-  const [isActiveLoader, setIsActiveLoader] = useState(false);
-
-  const handleContactSubmit = async (e) => {
-    e.preventDefault();
-    setIsActiveLoader(true);
-    try {
-      const Data = {
-        name: e.target.Name.value,
-        email: e.target.Email.value,
-        message: e.target.Message.value,
-        subject: e.target.Subject.value,
-      };
-      if (!Data.name || !Data.email || !Data.message || !Data.message) {
-        toast.error("All fields are required");
-        setIsActiveLoader(false);
-      } else {
-        const Saveresponse = await SaveEmail(Data);
-        if (Saveresponse.success === true) {
-          console.log("Email Saved Successfully");
-        } else {
-          console.log(Saveresponse);
-          toast.error("Enter Valid Email");
-          setIsActiveLoader(false);
-        }
-
-        const Sendresponse = await SendEmail(Data);
-        if (Sendresponse.success === true) {
-          toast.success("Email Sent Successfully");
-          setIsActiveLoader(false);
-        } else {
-          console.log(Sendresponse);
-          toast.error("Enter Valid Email");
-          setIsActiveLoader(false);
-        }
-      }
-    } catch (error) {
-      toast.error("something went wrong");
-      setIsActiveLoader(false);
-    }
-  };
-  const handleEmailClick = (event) => {
-    event.preventDefault();
-    const mailtoLink = `mailto:${JSON.stringify(
-      import.meta.env.VITE_REACT_APP_MY_Email
-    )}`;
-    window.location.href = mailtoLink;
-  };
-
-  const handlePhoneClick = () => {
-    window.location.href = `tel:${JSON.stringify(
-      import.meta.env.VITE_REACT_APP_MY_PhoneNO
-    )}`;
-  };
 
   return (
     <div className="py-16" id="contact">
@@ -78,22 +20,8 @@ function Contact() {
           </h1>
 
 
-        <form onSubmit={handleContactSubmit} className="md:flex">
-          {isActiveLoader && (
-            <div className=" absolute flex backdrop-blur-sm md:w-[65%] w-[100%]  flex-col md:h-[65%] h-[67%] justify-center items-center gap-3 ">
-              <div>
-                <label className="text-white text-3xl">Sending Mail....</label>
-              </div>
-              <div className="">
-                <PropagateLoader
-                  color={color}
-                  size={25}
-                  aria-label="Loading Spinner"
-                  data-testid="loader"
-                />
-              </div>
-            </div>
-          )}
+        <form className="md:flex">
+        
           <div className="md:w-[70%] pt-4">
             <div className="flex flex-col  items-center md:flex-row justify-center gap-8 ">
               <input
@@ -137,7 +65,7 @@ function Contact() {
             <div>
               <a
                 href="#"
-                onClick={handleEmailClick}
+               
                 className="flex items-center gap-4 underline "
               >
                 <FaTelegramPlane className="text-2xl text-[#06BF96]" />
@@ -147,7 +75,7 @@ function Contact() {
             <div>
               <a
                 href="#"
-                onClick={handlePhoneClick}
+               
                 className="flex items-center gap-4 "
               >
                 <FaPhoneAlt className="text-2xl text-[#06BF96]" />

@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Loader from "./Components/Loader";
 import "./index.css"
 function AnimatedSection({ children }) {
   const [ref, inView] = useInView({
