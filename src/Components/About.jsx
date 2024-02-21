@@ -115,7 +115,7 @@ function About() {
               </div>
             )}
             {activeTab === "Tab2" && (
-              <div className="py-4 md:text-lg text-[#ababab] font-Poppins text-sm md:mx-6 font-poppins ">
+              <div className="pt-12 md:pt-5 md:text-lg text-[#ababab] font-Poppins text-sm md:mx-6 font-poppins ">
                 <p>
                   {" "}
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
