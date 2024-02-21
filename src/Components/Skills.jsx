@@ -28,7 +28,7 @@ function Skills() {
     },
     {
       icon: <SiTailwindcss />,
-      name: "Tailwindcss",
+      name: "Tailwind CSS",
       textColor: "sky-500",
     },
     { icon: <DiReact />, name: "React Js", textColor: "sky-500" },

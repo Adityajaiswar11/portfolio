@@ -74,11 +74,7 @@ function Contact() {
                 <FaGithub className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
               </a>
             </div>
-            <div className="py-3">
-              <button className=" bg-slate-900 text-white py-2 px-5 opacity-90  rounded-md font-semibold hover:border duration-300 delay-300">
-                Download Resume
-              </button>
-            </div>
+           
           </div>
         </form>
       </div>
