@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import Header from "./Components/Header";
 import Home from "./Components/Home";
