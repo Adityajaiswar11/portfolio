@@ -2,37 +2,36 @@
 
 import img from "/Images/e-commerce.webp";
 import todo from "/Images/todo.webp";
-import WeatherApp from "/Images/WeatherApp.jpg";
+import youtube from "/Images/youtube.jpg";
 import PortFolioImage from "/Images/Portfolio.avif";
 
 function Project() {
   const Projects = [
     {
-      image:img,
+      image: img,
       name: "E-commerce",
       description:
         "The e-commerce website delivers a comprehensive shopping experience by combining intuitive user interfaces with robust authentication and data storage functionalities powered by Mongoose and MongoDB.",
-      Technology:
-        "React.js, NodeJs.js, Express, MongoDB",
+      Technology: "React.js, NodeJs.js, Express, MongoDB",
       Github: "https://github.com/Adityajaiswar11/E-commerce-frontend",
       live: "",
     },
     {
-      image: WeatherApp,
-      name: "Weather App",
+      image: youtube,
+      name: "Youtube_clone",
       description:
-        "Live Weather Forecaste : Realtime Updates on Current weather conditions",
-      Technology: "Next Js , External API",
-      Github: "",
-      live: "",
+        "This application is fully functional and responsive.Users can search for a video based on their preferences in this application, and afterward, the results will be displayed based on the search query",
+      Technology: "React.js,Rapid API,Tailwind CSS",
+
+      Github: "https://github.com/Adityajaiswar11/Youtube_Clone",
+      live: "https://youtubeclone2411.netlify.app/",
     },
     {
       image: PortFolioImage,
       name: "Portfolio",
       description:
         " See my portfolio! Dive into a showcase of my diverse projects, From innovative solutions to impactful results, each project reflects my dedication to excellence in Web Development",
-      Technology:
-        "React JS, Tailwind CSS",
+      Technology: "React JS, Tailwind CSS",
       Github: "",
       live: "",
     },

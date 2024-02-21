@@ -38,7 +38,7 @@ function Header() {
   return (
     <div className="md:px-[70px] w-full fixed  top-0 left-0 z-50  bg-gradient-to-r from-[#071b2e] to-[#000000]   ">
       <div className="flex justify-between h-16 items-center text-white ">
-        <h1 className="text-2xl md:pl-6  pl-4 font-bold">Aditya.</h1>
+        <h1 className="text-2xl md:pl-6  pl-4 font-bold first-letter:text-[#00FFFF] first-letter:text-3xl">Aditya.</h1>
         <div className="hidden text-white font-bold md:flex text-lg">
           {links.map((data) => (
             <Link

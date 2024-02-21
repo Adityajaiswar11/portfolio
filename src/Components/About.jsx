@@ -10,16 +10,20 @@ function About() {
     {
       year: "2020-2023",
       mark: "Score : 8.01 CGPA",
+      college : "Thakur College of Science and Commerce.Kandivali.",
       description: "B.Sc in Computer Science",
+      
     },
     {
       year: "2019-2020",
       mark: "Score : 51.38%",
+      college:"R.D National College Bandra West.",
       description: "HSC (Science)",
     },
     {
       year: "2017-2018",
       mark: "Score : 84.20%",
+      college:"B.L Ruia High School Vile Parle .",
       description: "SSC",
     },
   ];
@@ -37,7 +41,7 @@ function About() {
       </div>
       <div className="md:flex items-center gap-5 w-full">
         <div className="md:w-[50%]   text-white mx-auto">
-          <div className=" py-5 md:text-lg text-[#ababab] font-Poppins  font-serif text-sm mx-6 md:mx-0 flex flex-col gap-2">
+          <div className=" py-5 md:text-lg text-[#ababab] font-Poppins text-sm mx-6 md:mx-0 flex flex-col gap-2">
             <p className="text-md opacity-90">
               <TypeAnimation
                 sequence={["Hello , I am Aditya Jaiswar. "]}
@@ -82,7 +86,7 @@ function About() {
           </div>
           <div>
             {activeTab === "Tab1" && (
-              <div className="container my-8 relative pt-4 ">
+              <div className="container my-8 relative pt-4">
                 <div className="flex flex-col md:flex-row md:space-x-6">
                   <div className=" w-[100%] relative ">
                     {events.map((event, index) => (
@@ -101,6 +105,7 @@ function About() {
                           <p className="text-white font-bold">
                             {event.description}
                           </p>
+                          <p className="text-[#00FFFF] text-sm font-semibold">{event.college}</p>
                           <p className="text-white">{event.mark}</p>
                         </div>
                       </div>
@@ -110,7 +115,7 @@ function About() {
               </div>
             )}
             {activeTab === "Tab2" && (
-              <div className="pt-4 md:text-lg text-[#ababab] font-Poppins  font-serif text-sm md:mx-6  ">
+              <div className="py-4 md:text-lg text-[#ababab] font-Poppins text-sm md:mx-6 font-poppins ">
                 <p>
                   {" "}
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
@@ -129,7 +134,7 @@ function About() {
                 </p>
                 <p className="py-1">
                   Application 'Classmoon' is live and accessible via{" "}
-                  <a href="https://app.classmoon.in" target="_blank">
+                  <a href="https://app.classmoon.in" target="_blank" className="underline text-blue-600">
                     https://app.classmoon.in
                   </a>
                 </p>

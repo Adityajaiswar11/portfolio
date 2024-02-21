@@ -1,4 +1,3 @@
-
 import {
   FaGithub,
   FaLinkedin,
@@ -6,22 +5,15 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 
-
-
-
 function Contact() {
-
   return (
     <div className="py-16" id="contact">
       <div className="">
-       
-          <h1 className="text-5xl font-bold text-white text-center mb-10">
-            GET IN TOUCH 
-          </h1>
-
+        <h1 className="text-5xl font-bold text-white text-center mb-10">
+          GET IN TOUCH
+        </h1>
 
         <form className="md:flex">
-        
           <div className="md:w-[70%] pt-4">
             <div className="flex flex-col  items-center md:flex-row justify-center gap-8 ">
               <input
@@ -63,30 +55,19 @@ function Contact() {
           </div>
           <div className="md:w-[30%] text-white md:items-start items-center flex flex-col gap-5 ">
             <div>
-              <a
-                href="#"
-               
-                className="flex items-center gap-4 underline "
-              >
+              <a href="#" className="flex items-center gap-4 underline ">
                 <FaTelegramPlane className="text-2xl text-[#06BF96]" />
                 adityajaiswar11@gmail.com
               </a>
             </div>
             <div>
-              <a
-                href="#"
-               
-                className="flex items-center gap-4 "
-              >
+              <a href="#" className="flex items-center gap-4 ">
                 <FaPhoneAlt className="text-2xl text-[#06BF96]" />
                 <span>+91 9152187470</span>
               </a>
             </div>
             <div className="flex gap-4 text-3xl text-[#ababab]  ">
-              <a
-                href=""
-                target="_blank"
-              >
+              <a href="" target="_blank">
                 <FaLinkedin className="hover:text-[#00FFFF] hover:scale-125 duration-500" />
               </a>
               <a href="" target="_blank">

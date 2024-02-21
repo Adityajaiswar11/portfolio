@@ -27,7 +27,7 @@ function AnimatedSection({ children }) {
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      transition={{ duration: 0.75, delay: 0.35 }}
+      transition={{ duration: 0.75, delay: 0.40}}
       exit="hidden"
     >
       {children}
@@ -45,13 +45,25 @@ function App() {
         <Home />
       </AnimatedSection>
 
+      <AnimatedSection>
       <About />
+      </AnimatedSection>
 
+      <AnimatedSection>
       <Skills />
+      </AnimatedSection>
 
+      <AnimatedSection>
+     
       <Project />
-
+      </AnimatedSection>
+     
+      <AnimatedSection>
+      
       <Contact />
+      </AnimatedSection>
+
+
     </div>
   );
 }
