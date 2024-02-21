@@ -32,8 +32,8 @@ function Project() {
       description:
         " See my portfolio! Dive into a showcase of my diverse projects, From innovative solutions to impactful results, each project reflects my dedication to excellence in Web Development",
       Technology: "React JS, Tailwind CSS",
-      Github: "",
-      live: "",
+      Github: "https://github.com/Adityajaiswar11/portfolio",
+      live: "https://portfolio-9pjd9bzyz-adityajaiswar11s-projects.vercel.app/",
     },
     {
       image: todo,
