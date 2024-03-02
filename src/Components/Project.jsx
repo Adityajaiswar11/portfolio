@@ -12,7 +12,7 @@ function Project() {
       name: "E-commerce",
       description:
         "The e-commerce website delivers a comprehensive shopping experience by combining intuitive user interfaces with robust authentication and data storage functionalities powered by Mongoose and MongoDB.",
-      Technology: "React.js, NodeJs.js, Express, MongoDB",
+      Technology: "React.js, NodeJs.js, Express, MongoDB, Tailwind",
       Github: "https://github.com/Adityajaiswar11/E-commerce-frontend",
       live: "",
     },
@@ -39,8 +39,8 @@ function Project() {
       image: todo,
       name: "Todo task-management",
       description:
-        " I developed a Tic-Tac-Toe game using React to enhance my logic-building skills and learn the fundamentals of React development. This project demonstrates my ability to implement game mechanics and utilize React's component-based architecture effectively. ",
-      Technology: "React.Js",
+        "I developed a application  that is a simple yet effective tool designed to help users manage their tasks or to-do lists conveniently. With this application, users can easily add new tasks, edit existing ones, and delete tasks they no longer need. The data for these tasks is stored locally using the browser's local storage feature.",
+      Technology: "React.Js, Tailwind CSS",
       Github: "https://github.com/Adityajaiswar11/CRUD-OPERATION-in-React",
       live: "https://crud-operation-in-react-three.vercel.app/",
     },
@@ -56,18 +56,18 @@ function Project() {
           return (
             <div
               key={Math.random()}
-              className="h-[300px] group relative items-center shadow-lg shadow-[#06BF96] justify-center overflow-hidden cursor-pointer rounded-lg "
+              className="h-[300px] group relative items-center justify-center overflow-hidden cursor-pointer rounded-lg "
             >
               <img
                 className="object-cover w-full h-full rounded-lg group-hover:scale-125 transition-transform duration-500"
                 src={data.image}
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-transparent group-hover:to-[#06BF96]  "></div>
-              <div className=" absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-700">
-                <h1 className="text-3xl font-bold text-gray-300">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-transparent group-hover:to-[#06BF96] "></div>
+              <div className=" absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-700 hover:bg-slate-900/90">
+                <h1 className="text-xl font-bold text-[#00FFFF] mb-1 underline">
                   {data?.name}
                 </h1>
-                <div className="text-sm italic text-black font-bold mb-3 opacity-0 group-hover:opacity-100  duration-1000">
+                <div className="text-sm italic text-white/40 font-bold mb-3 opacity-0 group-hover:opacity-100  duration-1000">
                   <p>{data?.description}</p>
 
                   <p>Technology Used:- {data?.Technology}</p>

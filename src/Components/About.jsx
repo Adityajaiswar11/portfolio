@@ -121,7 +121,7 @@ function About() {
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
                     Capritech Private Limited :
                   </span>
-                  Over the last 3 months, I have been working as an intern at
+                  Over the last 5 months, I have been working as an intern at
                   Capritech Private Limited as a MERN stack developer, focusing
                   on the application 'Classmoon'.
                 </p>

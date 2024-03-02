@@ -20,6 +20,8 @@ function Home() {
             <h1 className="text-[#00FFFF] font-bold text-xl md:text-2xl py-2 ">
               <TypeAnimation
                 sequence={[
+                  "I am a web developer",
+                  1000,
                   "Front-End MERN Developer with React ",
                   1000,
                   "Back-End using Node.js and Express",
@@ -43,7 +45,7 @@ function Home() {
             </p>
             <div className="my-4 md:w-96 w-full  bg-[#00FFFF] shadow-sm shadow-[#00FFFF] h-1"></div>
             <div className="text-[#040d12] md:py-6  py-6 flex md:justify-start justify-center items-center ">
-            <button className="py-2 px-4 bg-slate-950 text-white/80 rounded-xl font-semibold hover:outline duration-300 outline-1 shadow-md shadow-white/50" download="">Download Resume</button>
+            <a href="" download=""><button className="py-2 px-4 bg-slate-950 text-white/80 rounded-xl font-semibold hover:outline duration-300 outline-1 shadow-md shadow-white/50">Download CV</button></a>
             </div>
           </div>
         </div>

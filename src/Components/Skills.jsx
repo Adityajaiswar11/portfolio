@@ -58,7 +58,7 @@ function Skills() {
 
   return (
     <div
-      className="lg:h-screen text-white sm:px-7 px-8 py-16 bg-slate-950 border-b"
+      className="lg:h-screen text-white sm:px-7 px-8 py-16 bg-slate-950 border-b font-semibold"
       id="skills"
     >
       <div className="text-center py-10 mb-5">
