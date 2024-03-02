@@ -69,11 +69,14 @@ function Skills() {
           return (
             <>
               <div
-                className={`text-${skill.textColor} flex justify-center items-center flex-col bg-transparent rounded-full hover:scale-125 duration-500 py-[2rem]`}
+                className={`text-${skill.textColor} flex justify-center items-center flex-col bg-transparent rounded-md hover:scale-125 duration-500 py-[2.5rem] text-center `}
                 key={index}
               >
+                <div className="hover:shadow-md hover:shadow-slate-300 py-4 px-6 rounded-md border">
                 <h1 className={` text-5xl`}> {skill.icon}</h1>
                 <h3 className="">{skill.name}</h3>
+                </div>
+              
               </div>
             </>
           );
