@@ -12,7 +12,7 @@ function Project() {
       name: "E-commerce",
       description:
         "The e-commerce website delivers a comprehensive shopping experience by combining intuitive user interfaces with robust authentication and data storage functionalities powered by Mongoose and MongoDB.",
-      Technology: "React.js, NodeJs.js, Express, MongoDB, Tailwind",
+      Technology: "React.js, NodeJs.js, Express, MongoDB, Tailwind CSS",
       Github: "https://github.com/Adityajaiswar11/E-commerce-frontend",
       live: "",
     },
