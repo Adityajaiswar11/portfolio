@@ -22,11 +22,11 @@ function Home() {
                 sequence={[
                   "I am a web developer",
                   1000,
-                  "Front-End MERN Developer with React ",
+                  "Front-End Developer with React ",
                   1000,
-                  "Back-End using Node.js and Express",
+                  "Back-End using Node.js ,Express and MongoDB",
                   1000,
-                  "Passionate MERN Developer",
+                  "Passionate Full Stack Developer",
                   1000,
                 ]}
                 wrapper="span"

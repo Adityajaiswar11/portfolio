@@ -47,7 +47,7 @@ function Contact() {
             </div>
             <div className="flex justify-center py-6">
               <div className="w-[80%] flex md:justify-start justify-center">
-                <button className="py-2 px-4 rounded-lg bg-slate-900 text-white shadow-md">
+                <button className="py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-700 duration-300 text-white shadow-md">
                   Submit
                 </button>
               </div>
