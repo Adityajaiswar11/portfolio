@@ -62,7 +62,7 @@ function Skills() {
       id="skills"
     >
       <div className="text-center py-10 mb-5">
-        <h1 className="text-4xl font-bold">Skills</h1>
+        <h1 className="text-4xl font-bold">My Technical Skills</h1>
       </div>
       <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-9 gap-8">
         {skills.map((skill, index) => {

@@ -48,7 +48,7 @@ function About() {
                 cursor={false}
                 className="text-[#00FFFF] font-bold  text-xl"
               />
-              As a passionate web developer with a keen interest in the MERN stack, I hold a Bachelor of Science degree in Computer Science from Mumbai University. Over the past five months, I've been engaged in an internship at Capritech Private Limited, where I've honed my skills and gained practical experience in developing applications using the MERN stack.
+              As a passionate web developer with a keen interest in the MERN stack, I hold a Bachelor of Science degree in Computer Science from Mumbai University.
             </p>
             <p  className="text-md opacity-90">
               I'm particularly passionate about Development, and I love
@@ -116,32 +116,30 @@ function About() {
             )}
             {activeTab === "Tab2" && (
               <div className="pt-12 md:pt-5 md:text-lg text-[#ababab] font-Poppins text-sm md:mx-6 font-poppins ">
-                <p>
+                <p className="text-[14px] font-semibold ">
                   {" "}
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
-                    Capritech Private Limited :
+                    Work Experience :
                   </span>
-                  Over the last 5 months, I have been working as an intern at
-                  Capritech Private Limited as a MERN stack developer, focusing
-                  on the application 'Classmoon'.
+                  Over the last 8 months, I have been working as frontend at
+                  Capritech Private Limited.
+                  With 8 months of hands-on experience in HTML, CSS, JavaScript, React, Tailwind, Next.js, Node.js, Express.js, MongoDB, and SQL, I am confident in my ability to contribute effectively to your team.
                 </p>
-                <p className="py-1">
+                <p className="py-1 text-[14px] font-semibold ">
                   Gained hands-on experience in MERN stack development.
                 </p>
-                <p className="py-1">
+                <p className="py-1 text-[14px] font-semibold ">
                   Demonstrated ability to work in a professional environment and
                   meet project deadlines.
                 </p>
-                <p className="py-1">
+                {/* <p className="py-1 text-[14px] font-semibold ">
                   Application 'Classmoon' is live and accessible via{" "}
                   <a href="https://app.classmoon.in" target="_blank" className="underline text-blue-600">
                     https://app.classmoon.in
                   </a>
-                </p>
-                <p className="py-1">
-                  Currently seeking further opportunities to apply and expand my
-                  skills in the field of Web Development
-                </p>
+                </p> */}
+                <p className="py-1 text-[14px] font-semibold ">
+                Would it be possible to discuss further about how my experience and skills align with the needs of your team? I am available at your earliest convenience for a conversation.                </p>
               </div>
             )}
           </div>
