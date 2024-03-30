@@ -39,16 +39,16 @@ function About() {
           About Me!
         </h1>
       </div>
-      <div className="md:flex items-center gap-5 w-full">
-        <div className="md:w-[50%]   text-white mx-auto">
-          <div className=" py-5 md:text-lg text-[#ababab] font-Poppins text-sm mx-6 md:mx-0 flex flex-col gap-2">
+      <div className="md:flex items-start justify-around gap-5 w-full">
+        <div className="md:w-[50%] text-white mx-auto">
+          <div className="py-1 md:text-lg text-[#ababab] font-Poppins text-sm mx-6 md:mx-0 flex flex-col gap-2">
             <p className="text-md opacity-90">
               <TypeAnimation
                 sequence={["Hello , I am Aditya Jaiswar. "]}
                 cursor={false}
                 className="text-[#00FFFF] font-bold  text-xl"
               />
-              As a passionate web developer with a keen interest in the MERN stack, I hold a Bachelor of Science degree in Computer Science from Mumbai University.
+              As a passionate web developer with a keen interest in the Full Stack Developer, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
             </p>
             <p  className="text-md opacity-90">
               I'm particularly passionate about Development, and I love
@@ -65,7 +65,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="md:w-[40%] px-6 h-[500px]  ">
+        <div className="md:w-[40%] px-6 h-[500px] mt-16 md:mt-0  ">
           <div className="w-[100%] h-[40px]  flex items-center border-2 border-[#00FFFF] ">
             <button
               className={`w-[50%] font-bold text-2xl ${
