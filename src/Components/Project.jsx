@@ -3,6 +3,7 @@
 import img from "/Images/e-commerce.webp";
 import todo from "/Images/todo.webp";
 import youtube from "/Images/youtube.jpg";
+import country from "/Images/country.png"
 import PortFolioImage from "/Images/Portfolio.avif";
 
 function Project() {
@@ -25,6 +26,15 @@ function Project() {
 
       Github: "https://github.com/Adityajaiswar11/Youtube_Clone",
       live: "https://youtubeclone2411.netlify.app/",
+    },
+    {
+      image: country,
+      name: "country-explorer and Details",
+      description:
+        "Our Country Explorer Application seamlessly integrates with a reliable API to fetch comprehensive data about countries worldwide.We've incorporated a robust search functionality that allows users to quickly find.With the vast amount of data available, we've introduced pagination functionality to ensure smooth navigation through search results and filtered lists.",
+        Technology: "React.js,Country API,Tailwind CSS",
+      Github: "https://github.com/Adityajaiswar11/Country_Details_by_api",
+      live: "https://country-explorer-blue.vercel.app/",
     },
     {
       image: PortFolioImage,
