@@ -71,6 +71,7 @@ function Project() {
               <img
                 className="object-cover w-full h-full rounded-lg group-hover:scale-125 transition-transform duration-500"
                 src={data.image}
+                alt = {data.name}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-transparent group-hover:to-[#06BF96] "></div>
               <div className=" absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-700 hover:bg-slate-900/90">
