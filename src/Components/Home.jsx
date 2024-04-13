@@ -45,7 +45,7 @@ function Home() {
             </p>
             <div className="my-4 md:w-96 w-full  bg-[#00FFFF] shadow-sm shadow-[#00FFFF] h-1"></div>
             <div className="text-[#040d12] md:py-6  py-6 flex md:justify-start justify-center items-center ">
-            <a href="/public/Aditya_Jaiswar_Resume.pdf" download="Aditya_Resume.pdf"><button className="py-2 px-4 bg-slate-950 text-white/80 rounded-xl font-semibold hover:outline duration-300 outline-1 shadow-md shadow-white/50">Download CV</button></a>
+            <a href="/Aditya_Jaiswar_Resume.pdf" download="Aditya_Resume.pdf"><button className="py-2 px-4 bg-slate-950 text-white/80 rounded-xl font-semibold hover:outline duration-300 outline-1 shadow-md shadow-white/50">Download CV</button></a>
             </div>
           </div>
         </div>
