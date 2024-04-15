@@ -9,14 +9,14 @@ function About() {
   const events = [
     {
       year: "2020-2023",
-      mark: "Score : 8.01 CGPA",
+      mark: "Score : 8.01/10 CGPA",
       college : "Thakur College of Science and Commerce.Kandivali.",
       description: "B.Sc in Computer Science",
       
     },
     {
       year: "2019-2020",
-      mark: "Score : 51.38%",
+      mark: "Score : 6/10 CGPA",
       college:"R.D National College Bandra West.",
       description: "HSC (Science)",
     },
