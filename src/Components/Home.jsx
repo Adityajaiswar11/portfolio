@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 import {
   TiSocialTwitterCircular,
@@ -37,11 +38,8 @@ function Home() {
               />
             </h1>
             <p className="text-white sm:pb-5 pb-0  font-Poppins sm:w-[70%] text-center  opacity-80 md:text-md text-sm  pt-2 ">
-              I have a strong command over both front-end and back-end
-              technologies, allowing me to build complete and scalable
-              applications. I’m excited to be part of a team where I can
-              contribute my full stack development skills and help create
-              innovative and impactful applications
+              
+"I possess a strong command over both front-end and back-end technologies, enabling me to develop comprehensive and scalable applications. I am enthusiastic about joining a team where I can leverage my full stack development skills to contribute to the creation of innovative and impactful applications."
             </p>
             <div className="my-4 md:w-96 w-full  bg-[#00FFFF] shadow-sm shadow-[#00FFFF] h-1"></div>
             <div className="text-[#040d12] md:py-6  py-6 flex md:justify-start justify-center items-center ">

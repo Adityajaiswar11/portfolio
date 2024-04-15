@@ -48,13 +48,11 @@ function About() {
                 cursor={false}
                 className="text-[#00FFFF] font-bold  text-xl"
               />
-              As a passionate developer with a keen interest in the Full Stack Web Developer, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
+             As a passionate developer with a keen interest in Full Stack Web Development, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
             </p>
             <p  className="text-md opacity-90">
-              I'm particularly passionate about Development, and I love
-              exploring new trends and innovations in Web Development. In
-              addition to my technical skills, I bring strong communication and
-              collaboration skills to every project
+            I am particularly enthusiastic about development and enjoy exploring new trends and innovations in web development. In addition to my technical skills, I bring strong communication and collaboration skills to every project.
+              
             </p>
             <p>
               <span className="text-[#00FFFF] text-2xl font-bold">
