@@ -56,13 +56,13 @@ function Contact() {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Enter Your Name"
                 className="bg-[#262626] text-white pl-8   h-[50px] w-[80%] md:w-[38%] rounded-lg"
               />
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Enter Your Email"
                 className="bg-[#262626] text-white pl-8   h-[50px] w-[80%] md:w-[38%] rounded-lg"
               />
             </div>
@@ -72,10 +72,10 @@ function Contact() {
                 type="text"
                 name="message"
                 placeholder="Your Message"
-                className="bg-[#262626] text-white pl-8 h-[200px]   w-[80%] rounded-lg "
+                className="bg-[#262626] text-white pl-8 h-[200px]   w-[80%] rounded-lg py-2 "
               />
             </div>
-            <div className="flex justify-center py-6">
+            <div className="flex justify-center py-4">
               <div className="w-[80%] flex md:justify-start justify-center">
                 <input
                   type="submit"
@@ -110,6 +110,7 @@ function Contact() {
           </div>
         </form>
       </div>
+       <p className="text-center text-[12px] text-white/60 mt-10">&copy; 2024 Aditya Jaiswar. All rights reserved.</p>
     </div>
   );
 }
