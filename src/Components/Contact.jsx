@@ -110,7 +110,7 @@ function Contact() {
           </div>
         </form>
       </div>
-       <p className="text-center text-[12px] text-white/60 mt-10">&copy; 2024 Aditya Jaiswar. All rights reserved.</p>
+       <p className="text-center text-[12px] text-white/60 mt-10">&copy; created by Aditya Jaiswar. All rights reserved.</p>
     </div>
   );
 }
