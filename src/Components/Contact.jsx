@@ -79,7 +79,7 @@ function Contact() {
               <div className="w-[80%] flex md:justify-start justify-center">
                 <input
                   type="submit"
-                  value={loader?"Please Wait...":"Send"}
+                  value={loader?"Please Wait...":"Hire Me"}
                   className="py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-700 duration-300 text-white shadow-md"
                 />
               </div>
