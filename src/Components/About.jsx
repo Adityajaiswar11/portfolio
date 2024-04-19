@@ -48,7 +48,7 @@ function About() {
                 cursor={false}
                 className="text-[#00FFFF] font-bold  text-xl"
               />
-             As a passionate developer with a keen interest in Full Stack Web Development, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
+             As a passionate developer with a keen interest in FullStack Development, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
             </p>
             <p  className="text-md opacity-90">
             I am particularly enthusiastic about development and enjoy exploring new trends and innovations in web development. In addition to my technical skills, I bring strong communication and collaboration skills to every project.
@@ -119,9 +119,9 @@ function About() {
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
                     Work Experience :
                   </span>
-                  Over the last 8 months, I have been working as frontend at
+                  Over the last sixth months, I have been working as frontend at
                   Capritech Private Limited.
-                  With 8 months of hands-on experience in HTML, CSS, JavaScript, React, Tailwind, Next.js, Node.js, Express.js, MongoDB, and SQL, I am confident in my ability to contribute effectively to your team.
+                  With sixth months of hands-on experience in HTML, CSS, JavaScript, React, Tailwind, Next.js, Node.js, Express.js, MongoDB, and SQL, I am confident in my ability to contribute effectively to your team.
                 </p>
                 <p className="py-1 text-[14px] font-semibold ">
                   Gained hands-on experience in MERN stack development.
