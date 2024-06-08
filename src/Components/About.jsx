@@ -41,14 +41,14 @@ function About() {
       </div>
       <div className="md:flex items-start justify-around gap-5 w-full">
         <div className="md:w-[50%] text-white mx-auto">
-          <div className="py-1 md:text-lg text-[#ababab] font-Poppins text-sm mx-6 md:mx-0 flex flex-col gap-2">
+          <div className="py-1 md:text-[14px] text-[#ababab] text-sm mx-6 md:mx-0 flex flex-col gap-2">
             <p className="text-md opacity-90">
               <TypeAnimation
                 sequence={["Hello , I am Aditya Jaiswar. "]}
                 cursor={false}
                 className="text-[#00FFFF] font-bold  text-xl"
               />
-             As a passionate developer with a keen interest in FullStack Development, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
+             As a passionate developer with a keen interest in Full Stack Development, I hold a Bachelor of Science degree in Computer Science from the University of Mumbai.
             </p>
             <p  className="text-md opacity-90">
             I am particularly enthusiastic about development and enjoy exploring new trends and innovations in web development. In addition to my technical skills, I bring strong communication and collaboration skills to every project.

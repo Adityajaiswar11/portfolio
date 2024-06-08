@@ -9,7 +9,7 @@ function Symbol() {
           <div className="text-red-500 text-5xl">
             <SiHtml5 />
           </div>
-          <div>HTML5</div>
+          <div>HTML5</div>++++++.;/
         </div>
         <div className="md:px-10 px-3">
           <div className="text-blue-700 text-5xl">
