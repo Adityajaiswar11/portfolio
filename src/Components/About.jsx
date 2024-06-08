@@ -113,31 +113,22 @@ function About() {
               </div>
             )}
             {activeTab === "Tab2" && (
-              <div className="pt-12 md:pt-5 md:text-lg text-[#ababab] font-Poppins text-sm md:mx-6 font-poppins ">
-                <p className="text-[14px] font-semibold ">
+              <div className="pt-12 md:pt-5 md:text-lg text-[#ababab]  text-sm md:mx-6 ">
+                <p className="text-[14px] font-medium ">
                   {" "}
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
                     Work Experience :
                   </span>
-                  Over the last sixth months, I have been working as frontend at
-                  Capritech Private Limited.
-                  With sixth months of hands-on experience in HTML, CSS, JavaScript, React, Tailwind, Next.js, Node.js, Express.js, MongoDB, and SQL, I am confident in my ability to contribute effectively to your team.
+                  I have one year of professional experience as a Frontend Developer.
+                  I am currently working at Bold Softmation LLP as a Frontend Developer, where I am involved in developing a comprehensive CRM system for Glutape India Private Limited. My role focuses on creating an intuitive user interface, ensuring responsive design, and integrating the frontend with backend APIs to deliver a seamless and efficient user experience. Additionally, I am dedicated to performance optimization and thorough debugging to maintain a high-quality, reliable application.
                 </p>
                 <p className="py-1 text-[14px] font-semibold ">
-                  Gained hands-on experience in MERN stack development.
+                  Gained hands-on experience in Web development.
                 </p>
                 <p className="py-1 text-[14px] font-semibold ">
                   Demonstrated ability to work in a professional environment and
                   meet project deadlines.
                 </p>
-                {/* <p className="py-1 text-[14px] font-semibold ">
-                  Application 'Classmoon' is live and accessible via{" "}
-                  <a href="https://app.classmoon.in" target="_blank" className="underline text-blue-600">
-                    https://app.classmoon.in
-                  </a>
-                </p> */}
-                <p className="py-1 text-[14px] font-semibold ">
-                Would it be possible to discuss further about how my experience and skills align with the needs of your team? I am available at your earliest convenience for a conversation.                </p>
               </div>
             )}
           </div>
