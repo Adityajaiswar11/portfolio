@@ -119,15 +119,19 @@ function About() {
                   <span className="text-[#00FFFF] py-1 text-xl px-1 font-bold">
                     Work Experience :
                   </span>
-                  I have one year of professional experience as a Frontend Developer.
-                  I am currently working at Bold Softmation LLP as a Frontend Developer, where I am involved in developing a comprehensive CRM system for Glutape India Private Limited. My role focuses on creating an intuitive user interface, ensuring responsive design, and integrating the frontend with backend APIs to deliver a seamless and efficient user experience. Additionally, I am dedicated to performance optimization and thorough debugging to maintain a high-quality, reliable application.
+                 Hi, I am Aditya , A frontend Developer with 1.6 years of of experiece expertise in React.js , Next.js and Javascript. I build fast,
+                 scalable, and user-friendly web application. I have also experience building android app using <b>React Native</b>.
                 </p>
                 <p className="py-1 text-[14px] font-semibold ">
-                  Gained hands-on experience in Web development.
+                  -Proficient in modern frontend stacks - React.js, Next.js, Tailwind css, Redux and Material UI.
                 </p>
                 <p className="py-1 text-[14px] font-semibold ">
-                  Demonstrated ability to work in a professional environment and
-                  meet project deadlines.
+                  -Familiar and hands on experience in backend development – Node.js, Express.js, MongoDB, and SQL for building robust and scalable applications.
+          
+                </p>
+                <p className="py-1 text-[14px] font-semibold">-Strong problem-solving & debugging skills, ensuring seamless user experiences.</p>
+                <p className="py-1 text-[14px] font-semibold">-Skilled in performance optimization, accessibility, and responsive design to enhance user engagement.</p>
+                <p className="py-1 text-[14px] font-semibold">-Familiar with DevOps tools – Git, GitHub and Vercel for smooth deployments.
                 </p>
               </div>
             )}
