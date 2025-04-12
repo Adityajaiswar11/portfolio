@@ -14,73 +14,43 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 function Skills() {
   const skills = [
-    { icon: <SiHtml5 />, name: "HTML5", textColor: "red-500" },
-    { icon: <SiCss3 />, name: "CSS", textColor: "blue-700" },
-    {
-      icon: <SiJavascript />,
-      name: "JavaScript",
-      textColor: "yellow-500",
-    },
-    {
-      icon: <SiBootstrap />,
-      name: "Bootstrap",
-      textColor: "purple-600",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
-      textColor: "sky-500",
-    },
-    { icon: <DiReact />, name: "React Js", textColor: "sky-500" },
-    {
-      icon: <TbBrandNextjs />,
-      name: "Next Js",
-      textColor: "white",
-    },
-    {
-      icon: <DiNodejs />,
-      name: "Node Js",
-      textColor: "green-500",
-    },
-    {
-      icon: <SiExpress />,
-      name: "Express Js",
-      textColor: "gray-500",
-    },
-    {
-      icon: <SiMongodb />,
-      name: "MongoDB",
-      textColor: "green-500",
-    },
-    { icon: <GrMysql />, name: "MySQL", textColor: "sky-400" },
-    { icon: <SiGithub />, name: "GitHub", textColor: "white" },
+    { icon: <SiHtml5 />, name: "HTML5", textColor: "text-red-500" },
+    { icon: <SiCss3 />, name: "CSS", textColor: "text-blue-700" },
+    { icon: <SiJavascript />, name: "JavaScript", textColor: "text-yellow-500" },
+    { icon: <SiBootstrap />, name: "Bootstrap", textColor: "text-purple-600" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", textColor: "text-sky-500" },
+    { icon: <DiReact />, name: "React Js", textColor: "text-sky-500" },
+    { icon: <TbBrandNextjs />, name: "Next Js", textColor: "text-white" },
+    { icon: <DiNodejs />, name: "Node Js", textColor: "text-green-500" },
+    { icon: <SiExpress />, name: "Express Js", textColor: "text-gray-500" },
+    { icon: <SiMongodb />, name: "MongoDB", textColor: "text-green-500" },
+    { icon: <GrMysql />, name: "MySQL", textColor: "text-sky-400" },
+    { icon: <SiGithub />, name: "GitHub", textColor: "text-white" },
   ];
 
   return (
     <div
-      className="lg:h-screen text-white sm:px-7 px-8 py-16 bg-slate-950 border-b font-semibold"
+      className="h-auto text-white px-6 py-16 bg-slate-950 border-b font-semibold"
       id="skills"
     >
-      <div className="text-center py-10 mb-5">
-        <h1 className="text-4xl font-bold">My Technical Skills</h1>
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-extrabold text-white tracking-wide">
+          My <span className="text-cyan-400">Technical Skills</span>
+        </h1>
+        <p className="text-gray-400 mt-2">Technologies I work with daily</p>
       </div>
-      <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-9 gap-8">
-        {skills.map((skill, index) => {
-          return (
-            <>
-              <div
-                className={`text-${skill.textColor} flex justify-center items-center flex-col bg-transparent rounded-md hover:scale-125 duration-500 py-[2.5rem] text-center `}
-                key={index}
-              >
-                <div className="hover:shadow-md hover:shadow-slate-300 py-4 px-6 rounded-md border">
-                <h1 className={` text-5xl`}> {skill.icon}</h1>
-                <h3 className="">{skill.name}</h3>
-                </div>
-              
-              </div>
-            </>
-          );
-        })}
+      <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-8">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className={`flex flex-col justify-center items-center ${skill.textColor} hover:scale-110 duration-300 p-5 rounded-xl shadow-lg bg-slate-900 hover:bg-slate-800 border border-slate-700`}
+          >
+            <div className="text-4xl mb-3">{skill.icon}</div>
+            <div className="text-center text-sm font-medium text-white">
+              {skill.name}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
