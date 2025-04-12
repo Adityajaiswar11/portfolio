@@ -4,7 +4,7 @@ import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 function About() {
-  const [activeTab, setActiveTab] = useState("Tab1");
+  const [activeTab, setActiveTab] = useState("Tab2");
 
   const events = [
     {
@@ -67,19 +67,19 @@ function About() {
           <div className="w-[100%] h-[40px]  flex items-center border-2 border-[#00FFFF] ">
             <button
               className={`w-[50%] font-bold text-2xl ${
-                activeTab === "Tab1" ? "text-[#00FFFF]" : "text-white"
-              }`}
-              onClick={() => handleTabClick("Tab1")}
-            >
-              Education
-            </button>
-            <button
-              className={`w-[50%] font-bold text-2xl ${
                 activeTab === "Tab2" ? "text-[#00FFFF]" : "text-white"
               }`}
               onClick={() => handleTabClick("Tab2")}
             >
-              Experience
+               Experience
+            </button>
+            <button
+              className={`w-[50%] font-bold text-2xl ${
+                activeTab === "Tab1" ? "text-[#00FFFF]" : "text-white"
+              }`}
+              onClick={() => handleTabClick("Tab1")}
+            >
+             Education 
             </button>
           </div>
           <div>
